@@ -8,12 +8,18 @@
       @close="setSideNavOpen(false)"
     >
       <md-toolbar>
-        <div class="md-toolbar-container"><h3 class="md-title">vue-googlemaps</h3></div>
+        <div class="md-toolbar-container"><h3 class="md-title">ホーランエンヤ 2019</h3></div>
       </md-toolbar>
 
       <md-list>
         <md-list-item>
-          <router-link :to="{ name: 'simple' }" exact>Simple map</router-link>
+          <router-link :to="{ name: 'route1' }" exact>渡御祭ルート情報</router-link>
+        </md-list-item>
+        <md-list-item>
+          <router-link :to="{ name: 'restrooms' }">トイレ情報</router-link>
+        </md-list-item>
+        <md-list-item>
+          <router-link :to="{ name: 'simple' }">Simple map</router-link>
         </md-list-item>
         <md-list-item>
           <router-link :to="{ name: 'nearby' }">Nearby places</router-link>
@@ -60,6 +66,10 @@ export default {
 <style lang="stylus">
 html, body, #app {
   height: 100%;
+}
+
+.md-theme-default.md-toolbar{
+  background-color: #e50e20;
 }
 
 body {

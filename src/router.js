@@ -5,12 +5,24 @@ import SimpleMap from './components/SimpleMap.vue'
 import NearbyPlaces from './components/NearbyPlaces.vue'
 import LocationGeocoder from './components/LocationGeocoder.vue'
 import PlaceDetails from './components/PlaceDetails.vue'
+import RouteMapDay1 from './components/RouteMapDay1.vue'
+import RestRooms from './components/RestRooms.vue'
 
 const router = new VueRouter({
   mode: 'hash',
   routes: [
     {
       path: '/',
+      name: 'route1',
+      component: RouteMapDay1,
+    },
+    {
+      path: '/restrooms',
+      name: 'restrooms',
+      component: RestRooms,
+    },
+    {
+      path: '/simple',
       name: 'simple',
       component: SimpleMap,
     },
