@@ -18,7 +18,7 @@
         <md-list-item>
           <router-link :to="{ name: 'restrooms' }">トイレ情報</router-link>
         </md-list-item>
-        <md-list-item>
+        <!-- <md-list-item>
           <router-link :to="{ name: 'simple' }">Simple map</router-link>
         </md-list-item>
         <md-list-item>
@@ -29,7 +29,7 @@
         </md-list-item>
         <md-list-item>
           <router-link :to="{ name: 'place-details' }">Place details</router-link>
-        </md-list-item>
+        </md-list-item> -->
       </md-list>
     </md-sidenav>
   </div>
@@ -66,10 +66,6 @@ export default {
 <style lang="stylus">
 html, body, #app {
   height: 100%;
-}
-
-.md-theme-default.md-toolbar{
-  background-color: #e50e20;
 }
 
 body {

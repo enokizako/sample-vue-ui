@@ -14,6 +14,13 @@ Vue.config.productionTip = false
 
 Vue.component('LoadingOverlay', LoadingOverlay)
 
+Vue.material.registerTheme('default', {
+  primary: 'red',
+  accent: 'indigo',
+  warn: 'deep-orange',
+  background: 'white',
+})
+
 // eslint-disable-next-line no-new
 new Vue({
   router,

@@ -20,7 +20,13 @@
       <googlemaps-marker
         title="松江城山稲荷神社"
         :draggable="false"
-        :position="{ lat: 35.4770107, lng: 133.0511889 }"
+        :position="{ lat: 35.477704, lng: 133.049543 }"
+      />
+
+      <googlemaps-marker
+        title="阿太加夜神社"
+        :draggable="false"
+        :position="{ lat: 35.432991, lng: 133.126316 }"
       />
 
       <!-- Polyline -->
@@ -47,8 +53,8 @@ export default {
       },
       path: [
         {
-          lat: 35.4770107,
-          lng: 133.0511889,
+          lat: 35.477704,
+          lng: 133.049543,
         },
         {
           lat: 35.477136,
@@ -57,6 +63,10 @@ export default {
         {
           lat: 35.476883,
           lng: 133.050214,
+        },
+        {
+          lat: 35.47623,
+          lng: 133.05106,
         },
         {
           lat: 35.475861,
@@ -115,8 +125,20 @@ export default {
           lng: 133.061959,
         },
         {
+          lat: 35.465423,
+          lng: 133.070126,
+        },
+        {
           lat: 35.461427,
           lng: 133.093474,
+        },
+        {
+          lat: 35.456217,
+          lng: 133.100088,
+        },
+        {
+          lat: 35.454288,
+          lng: 133.100783,
         },
         {
           lat: 35.450052,
@@ -135,6 +157,10 @@ export default {
           lng: 133.139684,
         },
         {
+          lat: 35.441729,
+          lng: 133.131084,
+        },
+        {
           lat: 35.435128,
           lng: 133.12648,
         },
@@ -151,11 +177,11 @@ export default {
           lng: 133.13044,
         },
         {
-          lat: 35.4329851,
-          lng: 133.1220267,
+          lat: 35.432991,
+          lng: 133.126316,
         },
       ],
-      options: {},
+      options: { strokeColor: 'red' },
       userPosition: null,
       zoom: 12,
     }

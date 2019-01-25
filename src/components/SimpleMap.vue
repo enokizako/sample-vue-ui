@@ -18,9 +18,9 @@
 
       <!-- Marker -->
       <googlemaps-marker
-        title="Paris"
+        title="松江城山稲荷神社"
         :draggable="true"
-        :position="{ lat: 48.8735, lng: 2.2951 }"
+        :position="{ lat: 35.477443178160144, lng: 133.04928015958498 }"
       />
 
       <!-- Polyline -->
@@ -42,22 +42,30 @@ export default {
   data() {
     return {
       center: {
-        lat: 48.853,
-        lng: 2.298,
+        lat: 35.477443178160144,
+        lng: 133.04928015958498,
       },
       path: [
         {
-          lat: 48.853,
-          lng: 2.298,
+          lat: 35.43077538025353,
+          lng: 133.15140181451056,
         },
         {
-          lat: 48.8735,
-          lng: 2.2951,
+          lat: 35.463839,
+          lng: 133.080354,
+        },
+        {
+          lat: 35.468073,
+          lng: 133.052507,
+        },
+        {
+          lat: 35.477443178160144,
+          lng: 133.04928015958498,
         },
       ],
       options: {},
       userPosition: null,
-      zoom: 12,
+      zoom: 18,
     }
   },
 
