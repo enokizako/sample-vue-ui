@@ -6,6 +6,8 @@ import NearbyPlaces from './components/NearbyPlaces.vue'
 import LocationGeocoder from './components/LocationGeocoder.vue'
 import PlaceDetails from './components/PlaceDetails.vue'
 import RouteMapDay1 from './components/RouteMapDay1.vue'
+import RouteMapDay2 from './components/RouteMapDay2.vue'
+import RouteMapDay3 from './components/RouteMapDay3.vue'
 import RestRooms from './components/RestRooms.vue'
 
 const router = new VueRouter({
@@ -15,6 +17,16 @@ const router = new VueRouter({
       path: '/',
       name: 'route1',
       component: RouteMapDay1,
+    },
+    {
+      path: '/route2',
+      name: 'route2',
+      component: RouteMapDay2,
+    },
+    {
+      path: '/route3',
+      name: 'route3',
+      component: RouteMapDay3,
     },
     {
       path: '/restrooms',

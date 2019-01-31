@@ -93,7 +93,7 @@
     <md-toolbar>
       <md-button class="md-icon-button" @click="toggleSideNav"> <md-icon>menu</md-icon> </md-button>
 
-      <h2 class="md-title" style="flex: 1;">渡御祭ルート情報</h2>
+      <h2 class="md-title" style="flex: 1;">還御祭ルート情報</h2>
 
       <md-button class="md-icon-button" :disabled="!userPosition" @click="centerOnUser">
         <md-icon>my_location</md-icon>

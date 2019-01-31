@@ -1,16 +1,11 @@
 <template>
   <div class="rest-rooms demo">
-    <!-- Toolbar -->
+    <!-- Header -->
     <md-toolbar>
-      <md-button class="md-icon-button" @click="toggleSideNav"> <md-icon>menu</md-icon> </md-button>
-
-      <h2 class="md-title" style="flex: 1;">トイレ情報</h2>
-
-      <md-button class="md-icon-button" :disabled="!userPosition" @click="centerOnUser">
-        <md-icon>my_location</md-icon>
-      </md-button>
+      <div class="md-toolbar-container">
+        <h2 class="md-title" style="margin:auto">ホーランエンヤ2019情報</h2>
+      </div>
     </md-toolbar>
-
     <!-- Map -->
     <googlemaps-map ref="map" class="map" :center.sync="center" :zoom.sync="zoom">
       <!-- User Position -->
@@ -49,6 +44,16 @@
         label="WC"
       />
     </googlemaps-map>
+    <!-- Toolbar -->
+    <md-toolbar>
+      <md-button class="md-icon-button" @click="toggleSideNav"> <md-icon>menu</md-icon> </md-button>
+
+      <h2 class="md-title" style="flex: 1;">トイレ情報</h2>
+
+      <md-button class="md-icon-button" :disabled="!userPosition" @click="centerOnUser">
+        <md-icon>my_location</md-icon>
+      </md-button>
+    </md-toolbar>
   </div>
 </template>
 

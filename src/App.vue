@@ -8,12 +8,18 @@
       @close="setSideNavOpen(false)"
     >
       <md-toolbar>
-        <div class="md-toolbar-container"><h3 class="md-title">ホーランエンヤ 2019</h3></div>
+        <div class="md-toolbar-container"><h3 class="md-title">メニュー</h3></div>
       </md-toolbar>
 
       <md-list>
         <md-list-item>
           <router-link :to="{ name: 'route1' }" exact>渡御祭ルート情報</router-link>
+        </md-list-item>
+        <md-list-item>
+          <router-link :to="{ name: 'route2' }">中日祭ルート情報</router-link>
+        </md-list-item>
+        <md-list-item>
+          <router-link :to="{ name: 'route3' }">還御祭ルート情報</router-link>
         </md-list-item>
         <md-list-item>
           <router-link :to="{ name: 'restrooms' }">トイレ情報</router-link>
@@ -82,6 +88,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 
   &.overlay {
     position: absolute;
